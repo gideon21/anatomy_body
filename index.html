@@ -16,14 +16,14 @@
 
     <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
     <a-scene embedded
-        arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 5x5;'
+        arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'
         renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
 
         <a-assets loading="lazy">
             <a-asset-item id="body" src="ecorche_-_anatomy_study/scene.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker type='barcode' value='5' raycaster="objects: .clickable" emitevents="true"
+        <a-marker type='barcode' value='7' raycaster="objects: .clickable" emitevents="true"
             cursor="fuse: false; rayOrigin: mouse;" id="markerA">
             <a-entity id="body-model" gltf-model="#body" position="0 0 0" scale="0.09 0.09 0.09" class="clickable"
                 gesture-handler="minScale: 0.25; maxScale: 10">
