@@ -3,7 +3,7 @@
 AFRAME.registerComponent("gesture-handler", {
   schema: {
     enabled: { default: true },
-    rotationFactor: { default: 1 },
+    rotationFactor: { default: 0 },
     minScale: { default: 0.25 },
     maxScale: { default: 10 },
   },
