@@ -25,7 +25,7 @@
 
         <a-marker type='barcode' value='7' raycaster="objects: .clickable" emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;" id="markerA">
-            <a-entity id="body-model" gltf-model="#body" position="0 0 0" scale="0.09 0.09 0.09" camera='near:0.1; far: 50000' gps-camera="minDistance: 50; positionMinAccuracy: 300; gpsMinDistance: 5;" rotation-reader>
+            <a-entity camera look-controls id="body-model" gltf-model="#body" position="0 0 0" scale="0.09 0.09 0.09">
             </a-entity>
         </a-marker>
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
