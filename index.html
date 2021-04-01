@@ -25,11 +25,11 @@
 
         <a-marker type='barcode' value='7' raycaster="objects: .clickable" emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;" id="markerA">
-            <a-entity camera look-controls id="body-model" gltf-model="#body" position="0 0 0" scale="0.09 0.09 0.09">
+            <a-entity id="body-model" gltf-model="#body" position="0 0 0" scale="0.09 0.09 0.09">
             </a-entity>
         </a-marker>
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
-        <a-entity camera></a-entity>
+        <a-entity camera look-controls></a-entity>
     </a-scene>
     
 </body>
