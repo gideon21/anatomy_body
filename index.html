@@ -22,10 +22,8 @@
             <a-asset-item id="body" src="ecorche_-_anatomy_study/scene.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker type='barcode' value='7' raycaster="objects: .clickable" emitevents="true"
-            cursor="fuse: false; rayOrigin: mouse;" id="markerA">
-            <a-entity id="body-model" gltf-model="#body" position="0 0 0" scale="0.09 0.09 0.09" class="clickable"
-                gesture-handler>
+        <a-marker type='barcode' value='7'>
+            <a-entity id="body-model" gltf-model="#body" position="0 0 0" scale="0.09 0.09 0.09">
             </a-entity>
         </a-marker>
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
