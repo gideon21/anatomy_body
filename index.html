@@ -22,10 +22,10 @@
             <a-asset-item id="body" src="ecorche_-_anatomy_study/scene.gltf"></a-asset-item>
         </a-assets>
 
-        <a-entity gltf-model="##body" position="0 0 0" scale="0.09 0.09 0.09">
-        </a-entity>
-
-        <a-marker type='barcode' value='7'></a-marker>
+        <a-marker type='barcode' value='7'>
+            <a-entity gltf-model="##body" position="0 0 0" scale="0.09 0.09 0.09">
+            </a-entity>
+        </a-marker>
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
         <a-entity camera></a-entity>
     </a-scene>
